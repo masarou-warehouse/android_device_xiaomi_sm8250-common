@@ -443,10 +443,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-# Thermal
-PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.qti
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.2-service-xiaomi_kona
