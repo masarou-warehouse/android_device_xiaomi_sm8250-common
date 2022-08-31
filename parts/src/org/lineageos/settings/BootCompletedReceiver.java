@@ -20,7 +20,10 @@ package org.lineageos.settings;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.SystemProperties;
 import android.util.Log;
+import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
@@ -34,7 +37,10 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) {
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+        
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
+        DiracUtils.initialize(context);
         DozeUtils.checkDozeService(context);
         PopupCameraUtils.checkPopupCameraService(context);
         ThermalUtils.startService(context);
