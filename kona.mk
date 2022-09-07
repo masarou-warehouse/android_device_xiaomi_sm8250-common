@@ -447,10 +447,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.xiaomi
 
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.2-service-xiaomi_kona
-
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
