@@ -29,7 +29,7 @@ public class DiracSound extends AudioEffect {
     private static final int DIRACSOUND_PARAM_SCENE = 15;
 
     private static final UUID EFFECT_TYPE_DIRACSOUND =
-            UUID.fromString("5b8e36a5-144a-4c38-b1d7-0002a5d5c51b");
+            UUID.fromString("ec7178ec-e5e1-4432-a3f4-4657e6795210");
     private static final String TAG = "DiracSound";
 
     public DiracSound(int priority, int audioSession) {
